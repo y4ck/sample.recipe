@@ -1,0 +1,29 @@
+@import "bootstrap";
+
+#content {
+	margin-top:60px;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  a {
+  	color: #888;
+  	&:hover {
+  		color:#555;
+  		text-decoration:none;
+  	}
+	}
+	small {
+		float:left;
+	}
+	ul {
+		float:right;
+		list-style: none;
+		li {
+			float:left;
+			margin:0 5px;
+		}
+	}
+}

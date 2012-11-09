@@ -1,0 +1,29 @@
+!!!
+%html
+	%head
+		%title= yield(:title)
+		= stylesheet_link_tag    "application", media: "all"
+		= javascript_include_tag "application"
+		= csrf_meta_tags
+	%body
+		%header{class: "navbar navbar-inverse navbar-fixed-top"}
+			.navbar-inner
+				.container
+					= link_to "Sample recipes app", '/', id: 'logo', class: "brand"
+					%nav{class: "nav-collapse collapse"}
+						%ul{class: "nav"}
+							%li= link_to "Home", "#"
+							%li= link_to "Home", "#"
+							%li= link_to "Home", "#"
+					
+		.container#content
+			.row-fluid
+				.span9= yield
+				.span3
+
+		%footer{class: "footer"}
+			%small Sample recipes app by Jacek 'y4ck' Pietrzyk
+			%nav
+				%ul
+					%li= link_to "contact", "#"
+					%li= link_to "something else"

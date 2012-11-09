@@ -1,0 +1,4 @@
+= form_tag(root_path, remote: true, id: "main-search-form") do
+	.input-append
+		= text_field_tag :something, nil, class: "span8", placeholder: "Type dish name"
+		= button_tag :ok, class: "btn"
